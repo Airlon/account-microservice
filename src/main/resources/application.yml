@@ -1,0 +1,14 @@
+quarkus:
+
+  swagger-ui:
+    always-include: true
+
+  http:
+    root-path: /${project.artifactId}
+
+  application:
+    name: @project.artifactId@
+
+  spring-cloud-config:
+    enabled: true # conexão com o config-server está disabilitado por padrão
+    url: https://localhost:8080/spring-config/

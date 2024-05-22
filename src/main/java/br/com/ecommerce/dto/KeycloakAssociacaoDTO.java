@@ -1,0 +1,20 @@
+package br.com.repassa.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class KeycloakAssociacaoDTO {
+
+    String idClient;
+    List<String> roles;
+
+}
